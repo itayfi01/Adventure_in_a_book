@@ -171,7 +171,7 @@ body.era-london .victorian-header p {
     height: var(--book-h);
     top: -150%;
     left: 50%;
-    transform: translateX(-25%) scale(0.65) rotateX(25deg);
+    transform: translateX(-75%) scale(0.65) rotateX(25deg);
     opacity: 0;
     cursor: pointer;
     z-index: 40;
@@ -191,7 +191,7 @@ body.era-london .victorian-header p {
 
 .book-container.active-book {
     top: calc(50% - var(--book-h) / 2);
-    transform: translateX(-25%) scale(1) rotateX(0deg);
+    transform: translateX(-75%) scale(1) rotateX(0deg);
     opacity: 1;
 }
 
