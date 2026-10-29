@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Exhibition — Midnight Gazette</title>
+    <meta name="description" content="The Midnight Gazette exhibition, November 1890. Six cabinets opened by the grimoire on Baker Street.">
+    <meta name="theme-color" content="#0b0b0e">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/exhibition.css">
+    <script>
+        try {
+            if (sessionStorage.getItem("parlor-passage") === "1") {
+                document.documentElement.classList.add("from-parlor");
+                sessionStorage.removeItem("parlor-passage");
+            }
+        } catch (error) {}
+    </script>
+</head>
+<body>
+    <div class="veil" aria-hidden="true"></div>
+    <a class="skip" href="#cabinets">Skip to the cabinets</a>
+
+    <header class="hero">
+        <div class="wrap mast">
+            <p>The Midnight Gazette</p>
+            <a href="index.html">Return to the parlor</a>
+        </div>
+        <div class="wrap">
+            <p class="kicker">No. 114 · Baker Street · November 1890</p>
+            <h1>The Grand<br>Exhibition</h1>
+            <p class="lede">The parchment yielded. For a moment the gaslight bent the wrong way, and then you were through — inside the rooms the grimoire only promised.</p>
+        </div>
+    </header>
+
+    <section class="story" aria-labelledby="passage-title">
+        <div class="wrap story-grid">
+            <div>
+                <h2 id="passage-title">Vol. XIX — The Passage</h2>
+                <p class="drop">On a foggy eve in November 1890, the gas lamps of Baker Street flickered as the veil between worlds grew thin. A card had been left on the mantel of the Midnight Gazette. It was plain until it was touched.</p>
+                <p>What followed was not a trick of the hand. The card remembered a street the fog had swallowed, and the street remembered a book. These cabinets are that book, taken down and set out. Open a plate to read the leaf. When you are finished, the parlor is still there.</p>
+            </div>
+            <figure class="plate">
+                <img src="images/street.jpg" alt="Westminster Bridge and the clock tower under a bright sky">
+                <figcaption>Westminster, from the bridge. Filed with the November number.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="cabinets" id="cabinets" aria-labelledby="cabinets-title">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="kicker">The cabinets</p>
+                <h2 id="cabinets-title">What the book kept</h2>
+                <p>Six leaves survived the riffle. Each one still answers if you ask it plainly.</p>
+            </div>
+            <div class="grid">
+                <article class="cabinet">
+                    <img src="images/street.jpg" alt="Westminster Bridge and the clock tower">
+                    <div class="cabinet-copy">
+                        <p class="kicker">Cabinet I</p>
+                        <h3>The Fog of Westminster</h3>
+                        <p class="pair">Facing leaf: Baker Street Gaslight</p>
+                        <p>The lamps along the bridge gutter in a rhythm, as if the pavement were breathing.</p>
+                        <button class="open-label" type="button" data-open="manuscript-westminster" aria-haspopup="dialog" aria-controls="manuscript-westminster">Open the cabinet<span class="sr-only">: The Fog of Westminster</span></button>
+                    </div>
+                </article>
+
+                <article class="cabinet">
+                    <img src="images/paper.jpg" alt="Open books pinned in a grid of aged pages">
+                    <div class="cabinet-copy">
+                        <p class="kicker">Cabinet II</p>
+                        <h3>Shadow Manuscripts</h3>
+                        <p class="pair">Facing leaf: The Alchemist's Seal</p>
+                        <p>A ledger of names the fog lifted off the calling-card tray.</p>
+                        <button class="open-label" type="button" data-open="manuscript-shadows" aria-haspopup="dialog" aria-controls="manuscript-shadows">Open the cabinet<span class="sr-only">: Shadow Manuscripts</span></button>
+                    </div>
+                </article>
+
+                <article class="cabinet">
+                    <img src="images/london.jpg" alt="The Thames curving through London, Tower Bridge in the foreground">
+                    <div class="cabinet-copy">
+                        <p class="kicker">Cabinet III</p>
+                        <h3>Chronicles of Old Thames</h3>
+                        <p class="pair">Facing leaf: a plate made long after</p>
+                        <p>Tide tables annotated in a hand no one at the Gazette admits to.</p>
+                        <button class="open-label" type="button" data-open="manuscript-thames" aria-haspopup="dialog" aria-controls="manuscript-thames">Open the cabinet<span class="sr-only">: Chronicles of Old Thames</span></button>
+                    </div>
+                </article>
+
+                <article class="cabinet">
+                    <img src="images/card-back.jpg" alt="A castle doubled in the still water below its bridge">
+                    <div class="cabinet-copy">
+                        <p class="kicker">Cabinet IV</p>
+                        <h3>Phantasmagoria &amp; Mirrors</h3>
+                        <p class="pair">Facing leaf: Obsidian Oracles</p>
+                        <p>A glass that reflects the room a minute behind itself.</p>
+                        <button class="open-label" type="button" data-open="manuscript-mirrors" aria-haspopup="dialog" aria-controls="manuscript-mirrors">Open the cabinet<span class="sr-only">: Phantasmagoria and Mirrors</span></button>
+                    </div>
+                </article>
+
+                <article class="cabinet">
+                    <img src="images/card-front.jpg" alt="A cobbled bridge disappearing into fog at a castle gate">
+                    <div class="cabinet-copy">
+                        <p class="kicker">Cabinet V</p>
+                        <h3>Beyond the Stone Portal</h3>
+                        <p class="pair">Facing leaf: Transmutation</p>
+                        <p>The road continues after the gate. The map ends before it.</p>
+                        <button class="open-label" type="button" data-open="manuscript-gates" aria-haspopup="dialog" aria-controls="manuscript-gates">Open the cabinet<span class="sr-only">: Beyond the Iron Gates</span></button>
+                    </div>
+                </article>
+
+                <article class="cabinet">
+                    <span class="plate-mark" aria-hidden="true">⚜</span>
+                    <div class="cabinet-copy">
+                        <p class="kicker">Cabinet VI</p>
+                        <h3>The Etheric Passage</h3>
+                        <p class="pair">Facing leaf: Spirits of the parlor</p>
+                        <p>The leaf you turned to arrive. It is still warm.</p>
+                        <button class="open-label" type="button" data-open="manuscript-passage" aria-haspopup="dialog" aria-controls="manuscript-passage">Open the cabinet<span class="sr-only">: The Etheric Passage</span></button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="closing">
+        <div class="wrap closing-band">
+            <div>
+                <h2>The passage stays open</h2>
+                <p>It does not close behind you. It only grows quiet. The card is on the mantel when you want it turned again.</p>
+            </div>
+            <a class="return-link" href="index.html">Return to the parlor</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <h1>For more advantures yet to come...</h1>
+            <p>Photographs from Unsplash. The evening itself is fiction.</p>
+        </div>
+    </footer>
+
+    <dialog class="manuscript" id="manuscript-westminster" aria-labelledby="title-westminster">
+        <p class="kicker">Cabinet I · Leaf 3</p>
+        <h2 id="title-westminster" tabindex="-1">The Fog of Westminster</h2>
+        <p>The plate shows the clock tower from the bridge, which is as much of Westminster as the fog allowed that week. A map in the Gazette office draws the neighboring streets only while you are not looking at them. Westminster keeps its outline. The streets around it step aside.</p>
+        <hr class="rule">
+        <h3>Baker Street Gaslight</h3>
+        <p>On Baker Street the lamps answer one another. When the third lamp from the corner goes dark, the parlor door is already open, whether or not anyone lifted the latch.</p>
+        <form method="dialog"><button class="plaque" type="submit">Close the cabinet</button></form>
+    </dialog>
+
+    <dialog class="manuscript" id="manuscript-shadows" aria-labelledby="title-shadows">
+        <p class="kicker">Cabinet II · Leaf 1</p>
+        <h2 id="title-shadows" tabindex="-1">Shadow Manuscripts</h2>
+        <p>The Gazette keeps a book it does not catalog. The pages in the plate are pinned so they cannot turn themselves, which they have tried. The names inside are written in a hand that changes with the weather. On wet nights the ink rises, as if the street were trying to remember who walked it.</p>
+        <hr class="rule">
+        <h3>The Alchemist's Seal</h3>
+        <p>The seal is wax the color of old blood. Pressed into it is a circle that will not sit still if you look away. Collectors have tried to copy it. The copies dry blank.</p>
+        <form method="dialog"><button class="plaque" type="submit">Close the cabinet</button></form>
+    </dialog>
+
+    <dialog class="manuscript" id="manuscript-thames" aria-labelledby="title-thames">
+        <p class="kicker">Cabinet III · Leaf 7</p>
+        <h2 id="title-thames" tabindex="-1">Chronicles of Old Thames</h2>
+        <p>This plate was made long after the night it describes. The river is the same river. The tide tables in the cabinet are annotated in a hand no one at the Gazette admits to, and the notes disagree with the Admiralty by exactly the time it takes to cross one more bridge than London has.</p>
+        <hr class="rule">
+        <h3>Marginal note</h3>
+        <p>Tower Bridge was still a rumor of iron in the autumn of 1890. The chronicle records it anyway, which the editors have chosen not to correct.</p>
+        <form method="dialog"><button class="plaque" type="submit">Close the cabinet</button></form>
+    </dialog>
+
+    <dialog class="manuscript" id="manuscript-mirrors" aria-labelledby="title-mirrors">
+        <p class="kicker">Cabinet IV · Leaf 8</p>
+        <h2 id="title-mirrors" tabindex="-1">Phantasmagoria &amp; Mirrors</h2>
+        <p>The plate shows a house doubled in still water. Hold it beside the parlor mirror and the two reflections do not agree. Ours answers a minute late. Guests who check their collars in it are already in the hall, putting on a coat they have not yet reached for.</p>
+        <hr class="rule">
+        <h3>Obsidian Oracles</h3>
+        <p>Seven stones, each answering a question you have not asked. They refuse any question you have. The editors consider this an improvement on most correspondence.</p>
+        <form method="dialog"><button class="plaque" type="submit">Close the cabinet</button></form>
+    </dialog>
+
+    <dialog class="manuscript" id="manuscript-gates" aria-labelledby="title-gates">
+        <p class="kicker">Cabinet V · Leaf 12</p>
+        <h2 id="title-gates" tabindex="-1">Beyond the Iron Gates</h2>
+        <p>The road in the plate ends at a gate, which is as far as the surveyor would go. Past it, the exhibition does not end. It only pretends to. Visitors who step through report a second parlor, identical except that the card on the mantel is already face up.</p>
+        <hr class="rule">
+        <h3>Transmutation</h3>
+        <p>Lead shot left in a saucer; by morning, a thin skin of gold. The saucer is exhibited empty. The gold is in the ledger, under expenses.</p>
+        <form method="dialog"><button class="plaque" type="submit">Close the cabinet</button></form>
+    </dialog>
+
+    <dialog class="manuscript" id="manuscript-passage" aria-labelledby="title-passage">
+        <p class="kicker">Cabinet VI · The leaf you turned</p>
+        <h2 id="title-passage" tabindex="-1">The Etheric Passage</h2>
+        <p>There is no plate for this cabinet. You are the record of it. The page was warm when it landed, and the parlor agreed, for once, with the time in both rooms.</p>
+        <hr class="rule">
+        <h3>Spirits of Victorian Parlors</h3>
+        <p>Calling cards left by guests who were never shown in. The astrolabe beside the tray is set for a sky London will not see until spring. Both are filed here so they will not follow you back to the mantel.</p>
+        <form method="dialog"><button class="plaque" type="submit">Close the cabinet</button></form>
+    </dialog>
+
+    <script src="js/exhibition.js"></script>
+</body>
+</html>
